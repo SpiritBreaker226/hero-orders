@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'
 
-import ErrorBoundary from './features/ErrorBoundary';
-import { Counter } from './features/counter/Counter';
+import { Counter } from './features/counter/Counter'
+import ErrorBoundary from './features/ErrorBoundary'
 
-import './App.scss';
+import logo from './logo.svg'
+import './App.scss'
 
 function App() {
   return (
@@ -57,7 +57,7 @@ function App() {
         </header>
       </div>
     </ErrorBoundary>
-  );
+  )
 }
 
-export default App;
+export default App
