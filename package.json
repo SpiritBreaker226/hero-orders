@@ -35,6 +35,7 @@
     "collectCoverageFrom": [
       "src/**/*.{ts,tsx}",
       "!src/index.tsx",
+      "!src/features/ErrorBoundary.tsx",
       "!src/*.ts",
       "!<rootDir>/node_modules/"
     ],
