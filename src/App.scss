@@ -1,10 +1,13 @@
+@import 'index';
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 3.8em;
   pointer-events: none;
+  background-color: $base-color;
 }
 
 @media (prefers-reduced-motion: no-preference) {

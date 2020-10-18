@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Counter } from './features/counter/Counter'
+
 import ErrorBoundary from './features/ErrorBoundary'
 
 import logo from './logo.svg'
@@ -11,7 +12,7 @@ function App() {
     <ErrorBoundary>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="chef hero" />
           <Counter />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
