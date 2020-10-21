@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchData fetch Order data on error from the server should render an error message 1`] = `
+<div
+  class="message"
+>
+  fake error message
+</div>
+`;
+
+exports[`FetchData fetch Order data renders loading screen 1`] = `
+<div
+  class="message"
+>
+  Loading...
+</div>
+`;
