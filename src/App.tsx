@@ -2,6 +2,7 @@ import React from 'react'
 
 import ErrorBoundary from './features/ErrorBoundary'
 import FetchData from './features/fetch_data/FetchData'
+import Table from './features/table/Table'
 
 import logo from './logo.svg'
 import './App.scss'
@@ -14,6 +15,7 @@ function App() {
       </header>
 
       <main role="main">
+        <Table />
         <FetchData />
       </main>
     </ErrorBoundary>

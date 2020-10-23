@@ -8,6 +8,7 @@ import {
   updateErrorMessageFromServer,
   selectFetch,
 } from './fetchDataSlice'
+import { updateOrders } from '../table/tableSlice'
 
 const FetchData: FunctionComponent = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,13 @@ const FetchData: FunctionComponent = () => {
       try {
         dispatch(updateLoading(true))
 
-        await axios.get(state.urlEndpoint)
+        const res = await axios.get(state.urlEndpoint)
+
+        dispatch(
+          updateOrders({
+            orders: res.data.data,
+          })
+        )
 
         dispatch(updateLoading(false))
       } catch (error) {

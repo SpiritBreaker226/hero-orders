@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App when fetching order data renders orders component 1`] = `
+<main
+  role="main"
+>
+  <section>
+    <table
+      data-testid="orders-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Status
+          </th>
+          <th>
+            Delivery Day
+          </th>
+          <th>
+            Supplier (or Vendor)
+          </th>
+          <th>
+            Total
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            2020-08-07
+          </td>
+          <td>
+            2020-08-07
+          </td>
+          <td>
+            2020-08-07
+          </td>
+          <td>
+            2020-08-07
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+          <td>
+            2020-07-31
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+`;
