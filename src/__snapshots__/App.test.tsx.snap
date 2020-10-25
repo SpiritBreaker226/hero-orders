@@ -27,58 +27,78 @@ exports[`App when fetching order data renders orders component 1`] = `
       <tbody>
         <tr>
           <td>
-            2020-08-07
+            Paid
           </td>
           <td>
-            2020-08-07
+            Aug 7, 2020
           </td>
           <td>
-            2020-08-07
+            D & D Poultry Ltd.
+            <span
+              class="table-field-pending-vendor-onboarding"
+            >
+              1st
+            </span>
           </td>
           <td>
-            2020-08-07
-          </td>
-        </tr>
-        <tr>
-          <td>
-            2020-07-31
-          </td>
-          <td>
-            2020-07-31
-          </td>
-          <td>
-            2020-07-31
-          </td>
-          <td>
-            2020-07-31
+            $273.95
           </td>
         </tr>
         <tr>
           <td>
-            2020-07-31
+            Delivered
           </td>
           <td>
-            2020-07-31
+            Jul 31, 2020
           </td>
           <td>
-            2020-07-31
+            D & D Poultry Ltd.
+            <span
+              class="table-byos"
+            >
+              Market
+            </span>
           </td>
           <td>
-            2020-07-31
+            $273.95
           </td>
         </tr>
         <tr>
           <td>
-            2020-07-31
+            Paid
           </td>
           <td>
-            2020-07-31
+            Jul 31, 2020
           </td>
           <td>
-            2020-07-31
+            D & D Poultry Ltd.
+            <span
+              class="table-byos"
+            >
+              Market
+            </span>
+            <span
+              class="table-field-pending-vendor-onboarding"
+            >
+              1st
+            </span>
           </td>
           <td>
-            2020-07-31
+            $821.85
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Paid
+          </td>
+          <td>
+            Jul 31, 2020
+          </td>
+          <td>
+            D & D Poultry Ltd.
+          </td>
+          <td>
+            $397.96
           </td>
         </tr>
       </tbody>

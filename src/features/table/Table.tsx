@@ -5,6 +5,8 @@ import { Datum } from '../../types/Order'
 
 import { selectFetch } from '../fetch_data/fetchDataSlice'
 
+import TableField from './table_field/TableField'
+
 import { columHeaders, selectOrders } from './tableSlice'
 
 const Table = () => {
@@ -40,7 +42,7 @@ const Table = () => {
               {columHeaders.map(
                 (columHeader: string, columnHeaderIndex: number) => (
                   <td key={`${columHeader}${columnHeaderIndex}`}>
-                    {order.deliveryDay}
+                    <TableField order={order} columHeader={columHeader} />
                   </td>
                 )
               )}
