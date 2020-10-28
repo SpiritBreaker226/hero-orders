@@ -51,13 +51,21 @@ exports[`App when fetching order data renders orders component 1`] = `
           <div
             class="fieldItem"
           >
-            Paid
+            <span
+              class="tagStatusPaid"
+            >
+              Paid
+            </span>
           </div>
         </section>
         <div
           class="fieldItemForDesktop"
         >
-          Paid
+          <span
+            class="tagStatusPaid"
+          >
+            Paid
+          </span>
         </div>
       </span>
       <span
@@ -186,13 +194,21 @@ exports[`App when fetching order data renders orders component 1`] = `
           <div
             class="fieldItem"
           >
-            Delivered
+            <span
+              class="tagStatusDelivered"
+            >
+              Delivered
+            </span>
           </div>
         </section>
         <div
           class="fieldItemForDesktop"
         >
-          Delivered
+          <span
+            class="tagStatusDelivered"
+          >
+            Delivered
+          </span>
         </div>
       </span>
       <span
@@ -321,13 +337,21 @@ exports[`App when fetching order data renders orders component 1`] = `
           <div
             class="fieldItem"
           >
-            Paid
+            <span
+              class="tagStatusPaid"
+            >
+              Paid
+            </span>
           </div>
         </section>
         <div
           class="fieldItemForDesktop"
         >
-          Paid
+          <span
+            class="tagStatusPaid"
+          >
+            Paid
+          </span>
         </div>
       </span>
       <span
@@ -466,13 +490,21 @@ exports[`App when fetching order data renders orders component 1`] = `
           <div
             class="fieldItem"
           >
-            Paid
+            <span
+              class="tagStatusPaid"
+            >
+              Paid
+            </span>
           </div>
         </section>
         <div
           class="fieldItemForDesktop"
         >
-          Paid
+          <span
+            class="tagStatusPaid"
+          >
+            Paid
+          </span>
         </div>
       </span>
       <span

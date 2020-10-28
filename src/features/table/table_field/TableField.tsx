@@ -36,7 +36,11 @@ const TableField = ({
       return !order.total ? '' : `$${order.total.toLocaleString()}`
     }
 
-    return order.orderBuyerStatus
+    return (
+      <span className={styles[`tagStatus${order.orderBuyerStatus}`]}>
+        {order.orderBuyerStatus}
+      </span>
+    )
   }
   const props = className === '' ? {} : { className }
 

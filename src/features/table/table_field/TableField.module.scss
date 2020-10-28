@@ -6,6 +6,23 @@ $body-market-bg-color: #3c3d3c;
 $body-market-text-color: $body-color;
 $body-1st-bg-color: #fdeb76;
 
+@mixin roundTags($background-color) {
+  font-weight: bold;
+  padding: 0.8em 1.32em;
+  border: 0.1em solid $background-color;
+  border-radius: 1em;
+  color: $body-clip-text-color;
+  background-color: $background-color;
+}
+
+.tagStatusPaid {
+  @include roundTags($body-paid-bg-color);
+}
+
+.tagStatusDelivered {
+  @include roundTags($body-delivered-bg-color);
+}
+
 .vendorContainer {
   display: flex;
   flex-flow: column wrap;
@@ -41,10 +58,6 @@ $body-1st-bg-color: #fdeb76;
 
   .tagFirst {
     margin-left: 0.5em;
-    padding: 0.8em 1.32em;
-    border: 0.1em solid $body-1st-bg-color;
-    border-radius: 1em;
-    color: $body-clip-text-color;
-    background-color: $body-1st-bg-color;
+    @include roundTags($body-1st-bg-color);
   }
 }
