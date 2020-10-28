@@ -31,9 +31,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Status
           </h4>
-          Paid
+          <div>
+            Paid
+          </div>
         </section>
-        Paid
+        <div>
+          Paid
+        </div>
       </span>
       <span>
         <section
@@ -42,9 +46,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Delivery Day
           </h4>
+          <div>
+            Aug 7, 2020
+          </div>
+        </section>
+        <div>
           Aug 7, 2020
-        </section>
-        Aug 7, 2020
+        </div>
       </span>
       <span>
         <section
@@ -53,19 +61,23 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Supplier
           </h4>
+          <div>
+            D & D Poultry Ltd.
+            <span
+              class="table-field-pending-vendor-onboarding"
+            >
+              1st
+            </span>
+          </div>
+        </section>
+        <div>
           D & D Poultry Ltd.
           <span
             class="table-field-pending-vendor-onboarding"
           >
             1st
           </span>
-        </section>
-        D & D Poultry Ltd.
-        <span
-          class="table-field-pending-vendor-onboarding"
-        >
-          1st
-        </span>
+        </div>
       </span>
       <span>
         <section
@@ -74,9 +86,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Total
           </h4>
-          $273.95
+          <div>
+            $273.95
+          </div>
         </section>
-        $273.95
+        <div>
+          $273.95
+        </div>
       </span>
     </section>
     <section
@@ -89,9 +105,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Status
           </h4>
+          <div>
+            Delivered
+          </div>
+        </section>
+        <div>
           Delivered
-        </section>
-        Delivered
+        </div>
       </span>
       <span>
         <section
@@ -100,9 +120,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Delivery Day
           </h4>
-          Jul 31, 2020
+          <div>
+            Jul 31, 2020
+          </div>
         </section>
-        Jul 31, 2020
+        <div>
+          Jul 31, 2020
+        </div>
       </span>
       <span>
         <section
@@ -111,19 +135,23 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Supplier
           </h4>
+          <div>
+            D & D Poultry Ltd.
+            <span
+              class="table-byos"
+            >
+              Market
+            </span>
+          </div>
+        </section>
+        <div>
           D & D Poultry Ltd.
           <span
             class="table-byos"
           >
             Market
           </span>
-        </section>
-        D & D Poultry Ltd.
-        <span
-          class="table-byos"
-        >
-          Market
-        </span>
+        </div>
       </span>
       <span>
         <section
@@ -132,9 +160,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Total
           </h4>
-          $273.95
+          <div>
+            $273.95
+          </div>
         </section>
-        $273.95
+        <div>
+          $273.95
+        </div>
       </span>
     </section>
     <section
@@ -147,9 +179,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Status
           </h4>
-          Paid
+          <div>
+            Paid
+          </div>
         </section>
-        Paid
+        <div>
+          Paid
+        </div>
       </span>
       <span>
         <section
@@ -158,9 +194,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Delivery Day
           </h4>
-          Jul 31, 2020
+          <div>
+            Jul 31, 2020
+          </div>
         </section>
-        Jul 31, 2020
+        <div>
+          Jul 31, 2020
+        </div>
       </span>
       <span>
         <section
@@ -169,6 +209,21 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Supplier
           </h4>
+          <div>
+            D & D Poultry Ltd.
+            <span
+              class="table-byos"
+            >
+              Market
+            </span>
+            <span
+              class="table-field-pending-vendor-onboarding"
+            >
+              1st
+            </span>
+          </div>
+        </section>
+        <div>
           D & D Poultry Ltd.
           <span
             class="table-byos"
@@ -180,18 +235,7 @@ exports[`App when fetching order data renders orders component 1`] = `
           >
             1st
           </span>
-        </section>
-        D & D Poultry Ltd.
-        <span
-          class="table-byos"
-        >
-          Market
-        </span>
-        <span
-          class="table-field-pending-vendor-onboarding"
-        >
-          1st
-        </span>
+        </div>
       </span>
       <span>
         <section
@@ -200,9 +244,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Total
           </h4>
-          $821.85
+          <div>
+            $821.85
+          </div>
         </section>
-        $821.85
+        <div>
+          $821.85
+        </div>
       </span>
     </section>
     <section
@@ -215,9 +263,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Status
           </h4>
-          Paid
+          <div>
+            Paid
+          </div>
         </section>
-        Paid
+        <div>
+          Paid
+        </div>
       </span>
       <span>
         <section
@@ -226,9 +278,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Delivery Day
           </h4>
-          Jul 31, 2020
+          <div>
+            Jul 31, 2020
+          </div>
         </section>
-        Jul 31, 2020
+        <div>
+          Jul 31, 2020
+        </div>
       </span>
       <span>
         <section
@@ -237,9 +293,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Supplier
           </h4>
-          D & D Poultry Ltd.
+          <div>
+            D & D Poultry Ltd.
+          </div>
         </section>
-        D & D Poultry Ltd.
+        <div>
+          D & D Poultry Ltd.
+        </div>
       </span>
       <span>
         <section
@@ -248,9 +308,13 @@ exports[`App when fetching order data renders orders component 1`] = `
           <h4>
             Total
           </h4>
-          $397.96
+          <div>
+            $397.96
+          </div>
         </section>
-        $397.96
+        <div>
+          $397.96
+        </div>
       </span>
     </section>
   </section>

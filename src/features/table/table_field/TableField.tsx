@@ -7,9 +7,14 @@ import { Datum } from '../../../types/Order'
 interface TableFieldProps {
   order: Datum
   columHeader: string
+  className?: string
 }
 
-const TableField = ({ order, columHeader }: TableFieldProps) => {
+const TableField = ({
+  order,
+  columHeader,
+  className = '',
+}: TableFieldProps) => {
   const field = () => {
     if (columHeader === 'Delivery Day') {
       return moment(order.deliveryDay).format('MMM D, YYYY')
@@ -29,8 +34,9 @@ const TableField = ({ order, columHeader }: TableFieldProps) => {
 
     return order.orderBuyerStatus
   }
+  const props = className === '' ? {} : { className }
 
-  return <>{field()}</>
+  return <div {...props}>{field()}</div>
 }
 
 export default TableField
