@@ -256,7 +256,7 @@ exports[`App when fetching order data renders orders component 1`] = `
               <div
                 class="vendorItem"
               >
-                D & D Poultry Ltd.
+                Mister Produce
               </div>
               <div
                 class="tags"
@@ -279,7 +279,7 @@ exports[`App when fetching order data renders orders component 1`] = `
             <div
               class="vendorItem"
             >
-              D & D Poultry Ltd.
+              Mister Produce
             </div>
             <div
               class="tags"
@@ -552,7 +552,7 @@ exports[`App when fetching order data renders orders component 1`] = `
               <div
                 class="vendorItem"
               >
-                D & D Poultry Ltd.
+                Canway Distribution
               </div>
               <div
                 class="tags"
@@ -569,7 +569,7 @@ exports[`App when fetching order data renders orders component 1`] = `
             <div
               class="vendorItem"
             >
-              D & D Poultry Ltd.
+              Canway Distribution
             </div>
             <div
               class="tags"
