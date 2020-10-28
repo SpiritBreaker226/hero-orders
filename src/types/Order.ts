@@ -15,15 +15,15 @@ export interface Datum {
   tax: number
   addOnOrderFor: string
   addOnOrders: any[]
-  statementEndAt: Date
+  statementEndAt: string
   debitTotalAmount: number
   isTestOrder: boolean
   skippedAt: string
   customerUrlsafe: string
   paidAmount: number
   id: number
-  paidAt: Date
-  statementStartAt: Date
+  paidAt: string
+  statementStartAt: string
   total: number
   disputedStatus: string
   invoiceURL: string
@@ -36,18 +36,18 @@ export interface Datum {
   grandPaidAmount: number
   disputedItems: any[]
   cancelledAt: string
-  deliveryDay: Date
+  deliveryDay: string
   deliveryRequests: string
   vendorUrlsafe: string
   isOnHold: boolean
   vendorName: string
-  invoiceSentAt: Date
+  invoiceSentAt: string
   invoiceMemos: any[]
   isShortedOrder: boolean
   orderPayments: OrderPayment[]
   isBYOS: boolean
   paidDebitNoteAmount: number
-  placedAt: Date
+  placedAt: string
   creditTotalAmount: number
   isInShoppingCart: boolean
   isPendingVendorOnboarding: boolean
@@ -57,8 +57,8 @@ export interface Datum {
   subtotal: number
   replacementOrderFor: string
   isReadyForQC: boolean
-  dueAt: Date
-  QCedAt: Date
+  dueAt: string
+  QCedAt: string
   isPaid: boolean
   isAddOnOrder: boolean
   isReplacementOrder: boolean
@@ -68,10 +68,10 @@ export interface Datum {
   vendorRegionID: string
   chefheroServicesFee: number
   paymentsTerms: number
-  modifiedAt: Date
+  modifiedAt: string
   isBuyingGroupOrder: number
   numberDisputedItems: number
-  sentAt: Date
+  sentAt: string
   isOrderReviewSubmitted: boolean
   billingAddress: BillingAddress
 }
@@ -96,13 +96,13 @@ export interface Geocode {
 
 export interface Buyer {
   isPaymentEnabled: boolean
-  statementStartDate: Date
+  statementStartDate: string
   hasSuppliersSetup: boolean
   tax: Tax
   isResidential: boolean
   accountingEmails: string[]
   id: number
-  createdAt: Date
+  createdAt: string
   paymentTerms: number
   urlsafe: string
   isSuspended: boolean
@@ -113,7 +113,7 @@ export interface Buyer {
   shippingAddresses: ShippingAddress[]
   stripeCustomerID: string
   phone: Fax
-  statementEndDate: Date
+  statementEndDate: string
   billingAddress: BillingAddress
   creditLimit: number
   paymentPreferredMethod: string
@@ -156,12 +156,12 @@ export interface Invoice {
   tax: number
   id: string
   total: number
-  dueDate: Date
-  createdAt: Date
+  dueDate: string
+  createdAt: string
   itemsSubtotal: number
   deliveryFeeSubtotal: number
   deliveryFeeTax: number
-  issueDate: Date
+  issueDate: string
   itemsTax: number
   adjustmentSubtotal: number
   serviceFeeSubtotal: number
@@ -171,8 +171,8 @@ export interface Invoice {
   serviceFeeTax: number
   costTotal: number
   url: string
-  paidAt: Date
-  modifiedAt: Date
+  paidAt: string
+  modifiedAt: string
   isPrimaryInvoice: boolean
 }
 
@@ -204,7 +204,7 @@ export interface Item {
   createdAt: string
   priceTotal: number
   salesUnit: string
-  modifiedAt: Date
+  modifiedAt: string
   isTaxable: boolean
   salesQuantity: number
   modifiedBy: string
@@ -230,5 +230,5 @@ export interface OrderPayment {
   orderUrlsafe: string
   deletedAt: string
   urlsafe: string
-  createdAt: Date
+  createdAt: string
 }
