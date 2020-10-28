@@ -5,314 +5,567 @@ exports[`App when fetching order data renders orders component 1`] = `
   role="main"
 >
   <section
+    class="table"
     data-testid="orders-table"
   >
-    <header>
-      <h4>
+    <header
+      class="columHeaderContainerForDesktop"
+    >
+      <h4
+        class="columHeaderForDesktop"
+      >
         Status
       </h4>
-      <h4>
+      <h4
+        class="columHeaderForDesktop"
+      >
         Delivery Day
       </h4>
-      <h4>
+      <h4
+        class="columHeaderForDesktop"
+      >
         Supplier
       </h4>
-      <h4>
+      <h4
+        class="columHeaderForDesktop"
+      >
         Total
       </h4>
     </header>
     <section
+      class="fieldContainerForDesktop"
       role="row"
     >
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Status
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Paid
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Paid
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Delivery Day
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Aug 7, 2020
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Aug 7, 2020
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Supplier
           </h4>
-          <div>
-            D & D Poultry Ltd.
-            <span
-              class="table-field-pending-vendor-onboarding"
+          <div
+            class="fieldItem"
+          >
+            <div
+              class="vendorContainer"
             >
-              1st
-            </span>
+              <div
+                class="vendorItem"
+              >
+                D & D Poultry Ltd.
+              </div>
+              <div
+                class="tags"
+              >
+                <span
+                  class="tagFirst"
+                >
+                  1st
+                </span>
+              </div>
+            </div>
           </div>
         </section>
-        <div>
-          D & D Poultry Ltd.
-          <span
-            class="table-field-pending-vendor-onboarding"
+        <div
+          class="fieldItemForDesktop"
+        >
+          <div
+            class="vendorContainer"
           >
-            1st
-          </span>
+            <div
+              class="vendorItem"
+            >
+              D & D Poultry Ltd.
+            </div>
+            <div
+              class="tags"
+            >
+              <span
+                class="tagFirst"
+              >
+                1st
+              </span>
+            </div>
+          </div>
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Total
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             $273.95
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           $273.95
         </div>
       </span>
     </section>
     <section
+      class="fieldContainerForDesktop"
       role="row"
     >
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Status
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Delivered
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Delivered
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Delivery Day
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Jul 31, 2020
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Jul 31, 2020
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Supplier
           </h4>
-          <div>
-            D & D Poultry Ltd.
-            <span
-              class="table-byos"
+          <div
+            class="fieldItem"
+          >
+            <div
+              class="vendorContainer"
             >
-              Market
-            </span>
+              <div
+                class="vendorItem"
+              >
+                D & D Poultry Ltd.
+              </div>
+              <div
+                class="tags"
+              >
+                <span
+                  class="tagMarket"
+                >
+                  Market
+                </span>
+              </div>
+            </div>
           </div>
         </section>
-        <div>
-          D & D Poultry Ltd.
-          <span
-            class="table-byos"
+        <div
+          class="fieldItemForDesktop"
+        >
+          <div
+            class="vendorContainer"
           >
-            Market
-          </span>
+            <div
+              class="vendorItem"
+            >
+              D & D Poultry Ltd.
+            </div>
+            <div
+              class="tags"
+            >
+              <span
+                class="tagMarket"
+              >
+                Market
+              </span>
+            </div>
+          </div>
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Total
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             $273.95
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           $273.95
         </div>
       </span>
     </section>
     <section
+      class="fieldContainerForDesktop"
       role="row"
     >
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Status
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Paid
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Paid
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Delivery Day
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Jul 31, 2020
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Jul 31, 2020
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Supplier
           </h4>
-          <div>
-            D & D Poultry Ltd.
-            <span
-              class="table-byos"
+          <div
+            class="fieldItem"
+          >
+            <div
+              class="vendorContainer"
             >
-              Market
-            </span>
-            <span
-              class="table-field-pending-vendor-onboarding"
-            >
-              1st
-            </span>
+              <div
+                class="vendorItem"
+              >
+                D & D Poultry Ltd.
+              </div>
+              <div
+                class="tags"
+              >
+                <span
+                  class="tagMarket"
+                >
+                  Market
+                </span>
+                <span
+                  class="tagFirst"
+                >
+                  1st
+                </span>
+              </div>
+            </div>
           </div>
         </section>
-        <div>
-          D & D Poultry Ltd.
-          <span
-            class="table-byos"
+        <div
+          class="fieldItemForDesktop"
+        >
+          <div
+            class="vendorContainer"
           >
-            Market
-          </span>
-          <span
-            class="table-field-pending-vendor-onboarding"
-          >
-            1st
-          </span>
+            <div
+              class="vendorItem"
+            >
+              D & D Poultry Ltd.
+            </div>
+            <div
+              class="tags"
+            >
+              <span
+                class="tagMarket"
+              >
+                Market
+              </span>
+              <span
+                class="tagFirst"
+              >
+                1st
+              </span>
+            </div>
+          </div>
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Total
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             $821.85
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           $821.85
         </div>
       </span>
     </section>
     <section
+      class="fieldContainerForDesktop"
       role="row"
     >
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Status
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Paid
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Paid
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Delivery Day
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             Jul 31, 2020
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           Jul 31, 2020
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Supplier
           </h4>
-          <div>
-            D & D Poultry Ltd.
+          <div
+            class="fieldItem"
+          >
+            <div
+              class="vendorContainer"
+            >
+              <div
+                class="vendorItem"
+              >
+                D & D Poultry Ltd.
+              </div>
+              <div
+                class="tags"
+              />
+            </div>
           </div>
         </section>
-        <div>
-          D & D Poultry Ltd.
+        <div
+          class="fieldItemForDesktop"
+        >
+          <div
+            class="vendorContainer"
+          >
+            <div
+              class="vendorItem"
+            >
+              D & D Poultry Ltd.
+            </div>
+            <div
+              class="tags"
+            />
+          </div>
         </div>
       </span>
-      <span>
+      <span
+        class="fieldItem"
+      >
         <section
           aria-hidden="true"
+          class="fieldContainer"
         >
-          <h4>
+          <h4
+            class="columHeader"
+          >
             Total
           </h4>
-          <div>
+          <div
+            class="fieldItem"
+          >
             $397.96
           </div>
         </section>
-        <div>
+        <div
+          class="fieldItemForDesktop"
+        >
           $397.96
         </div>
       </span>

@@ -1,0 +1,104 @@
+@import '../../index';
+
+$body-color: #ffffff;
+
+$body-field-text-color: #5b7277;
+$body-table-row-border-color: #f1f7f7;
+
+$body-table-text-color: #567379;
+$body-table-header-color: #072b2f;
+$body-table-boader-color: #eff7f7;
+$body-box-shadow-color: #d2d2d2;
+$body-clip-text-color: #191d20;
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+
+  @media all and (min-width: $layout-breakpoint-small) {
+    width: 80%;
+  }
+}
+
+.forDesktop {
+  @media all and (max-width: $layout-breakpoint-small) {
+    display: none;
+  }
+}
+
+.fieldItem {
+  flex: 1 2;
+
+  &:nth-child(3) {
+    flex: 2;
+  }
+}
+
+.fieldContainer {
+  display: flex;
+  margin: 0 0.5em 1em;
+
+  @media all and (min-width: $layout-breakpoint-small) {
+    display: none;
+  }
+}
+
+.columHeader {
+  @extend .fieldItem;
+
+  color: $body-table-header-color;
+  margin: 0;
+  min-width: 9em;
+
+  @media all and (min-width: $layout-breakpoint-small) {
+    display: none;
+  }
+}
+
+.fieldContainerForDesktop {
+  display: flex;
+  border-bottom: 0.1em solid $body-table-row-border-color;
+  padding: 1.3em 1.2em 0.5em;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  @media all and (max-width: $layout-breakpoint-medium) {
+    padding-bottom: 1.5em;
+  }
+
+  @media all and (max-width: $layout-breakpoint-small) {
+    display: block;
+    padding-bottom: 0.5em;
+  }
+}
+
+.columHeaderContainerForDesktop {
+  display: flex;
+  margin-top: 0.3em;
+  padding: 0 1.1em;
+  border: 0.1em solid $body-table-boader-color;
+  border-radius: 0.3em 0.3em 0 0;
+  box-shadow: 0.1em 0.1em 0.4em $body-box-shadow-color;
+
+  @media all and (max-width: $layout-breakpoint-small) {
+    display: none;
+  }
+}
+
+.columHeaderForDesktop {
+  @extend .fieldItem;
+  @extend .forDesktop;
+
+  color: $body-table-header-color;
+
+  &:nth-child(3) {
+    flex: 2;
+  }
+}
+
+.fieldItemForDesktop {
+  @extend .fieldItem;
+  @extend .forDesktop;
+}

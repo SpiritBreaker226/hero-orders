@@ -1,0 +1,50 @@
+@import '../Table.module';
+
+$body-paid-bg-color: #b0decb;
+$body-delivered-bg-color: #c5c4ff;
+$body-market-bg-color: #3c3d3c;
+$body-market-text-color: $body-color;
+$body-1st-bg-color: #fdeb76;
+
+.vendorContainer {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media all and (min-width: $layout-breakpoint-medium) {
+    flex-flow: row nowrap;
+  }
+}
+
+.vendorItem {
+  flex: 2;
+
+  @media all and (min-width: $layout-breakpoint-medium) {
+    min-height: 2.2em;
+  }
+}
+
+.tags {
+  flex: 2;
+  font-weight: bold;
+  padding-top: 1em;
+
+  @media all and (min-width: $layout-breakpoint-medium) {
+    padding-top: 0;
+  }
+
+  .tagMarket {
+    padding: 0.5em;
+    margin-left: 0;
+    color: $body-market-text-color;
+    background-color: $body-market-bg-color;
+  }
+
+  .tagFirst {
+    margin-left: 0.5em;
+    padding: 0.8em 1.32em;
+    border: 0.1em solid $body-1st-bg-color;
+    border-radius: 1em;
+    color: $body-clip-text-color;
+    background-color: $body-1st-bg-color;
+  }
+}

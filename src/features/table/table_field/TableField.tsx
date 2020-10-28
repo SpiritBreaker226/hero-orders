@@ -4,6 +4,8 @@ import moment from 'moment'
 
 import { Datum } from '../../../types/Order'
 
+import styles from './TableField.module.scss'
+
 interface TableFieldProps {
   order: Datum
   columHeader: string
@@ -20,13 +22,15 @@ const TableField = ({
       return moment(order.deliveryDay).format('MMM D, YYYY')
     } else if (columHeader === 'Supplier') {
       return (
-        <>
-          {order.vendorName}
-          {!order.isBYOS && <span className="table-byos">Market</span>}
-          {order.isPendingVendorOnboarding && (
-            <span className="table-field-pending-vendor-onboarding">1st</span>
-          )}
-        </>
+        <div className={styles.vendorContainer}>
+          <div className={styles.vendorItem}>{order.vendorName}</div>
+          <div className={styles.tags}>
+            {!order.isBYOS && <span className={styles.tagMarket}>Market</span>}
+            {order.isPendingVendorOnboarding && (
+              <span className={styles.tagFirst}>1st</span>
+            )}
+          </div>
+        </div>
       )
     } else if (columHeader === 'Total') {
       return !order.total ? '' : `$${order.total.toLocaleString()}`
