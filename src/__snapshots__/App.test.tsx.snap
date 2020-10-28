@@ -4,105 +4,255 @@ exports[`App when fetching order data renders orders component 1`] = `
 <main
   role="main"
 >
-  <section>
-    <table
-      data-testid="orders-table"
+  <section
+    data-testid="orders-table"
+  >
+    <header>
+      <h4>
+        Status
+      </h4>
+      <h4>
+        Delivery Day
+      </h4>
+      <h4>
+        Supplier
+      </h4>
+      <h4>
+        Total
+      </h4>
+    </header>
+    <section
+      role="row"
     >
-      <thead>
-        <tr>
-          <th>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
             Status
-          </th>
-          <th>
+          </h4>
+          Paid
+        </section>
+        Paid
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
             Delivery Day
-          </th>
-          <th>
+          </h4>
+          Aug 7, 2020
+        </section>
+        Aug 7, 2020
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
             Supplier
-          </th>
-          <th>
+          </h4>
+          D & D Poultry Ltd.
+          <span
+            class="table-field-pending-vendor-onboarding"
+          >
+            1st
+          </span>
+        </section>
+        D & D Poultry Ltd.
+        <span
+          class="table-field-pending-vendor-onboarding"
+        >
+          1st
+        </span>
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
             Total
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            Paid
-          </td>
-          <td>
-            Aug 7, 2020
-          </td>
-          <td>
-            D & D Poultry Ltd.
-            <span
-              class="table-field-pending-vendor-onboarding"
-            >
-              1st
-            </span>
-          </td>
-          <td>
-            $273.95
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Delivered
-          </td>
-          <td>
-            Jul 31, 2020
-          </td>
-          <td>
-            D & D Poultry Ltd.
-            <span
-              class="table-byos"
-            >
-              Market
-            </span>
-          </td>
-          <td>
-            $273.95
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Paid
-          </td>
-          <td>
-            Jul 31, 2020
-          </td>
-          <td>
-            D & D Poultry Ltd.
-            <span
-              class="table-byos"
-            >
-              Market
-            </span>
-            <span
-              class="table-field-pending-vendor-onboarding"
-            >
-              1st
-            </span>
-          </td>
-          <td>
-            $821.85
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Paid
-          </td>
-          <td>
-            Jul 31, 2020
-          </td>
-          <td>
-            D & D Poultry Ltd.
-          </td>
-          <td>
-            $397.96
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </h4>
+          $273.95
+        </section>
+        $273.95
+      </span>
+    </section>
+    <section
+      role="row"
+    >
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Status
+          </h4>
+          Delivered
+        </section>
+        Delivered
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Delivery Day
+          </h4>
+          Jul 31, 2020
+        </section>
+        Jul 31, 2020
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Supplier
+          </h4>
+          D & D Poultry Ltd.
+          <span
+            class="table-byos"
+          >
+            Market
+          </span>
+        </section>
+        D & D Poultry Ltd.
+        <span
+          class="table-byos"
+        >
+          Market
+        </span>
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Total
+          </h4>
+          $273.95
+        </section>
+        $273.95
+      </span>
+    </section>
+    <section
+      role="row"
+    >
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Status
+          </h4>
+          Paid
+        </section>
+        Paid
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Delivery Day
+          </h4>
+          Jul 31, 2020
+        </section>
+        Jul 31, 2020
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Supplier
+          </h4>
+          D & D Poultry Ltd.
+          <span
+            class="table-byos"
+          >
+            Market
+          </span>
+          <span
+            class="table-field-pending-vendor-onboarding"
+          >
+            1st
+          </span>
+        </section>
+        D & D Poultry Ltd.
+        <span
+          class="table-byos"
+        >
+          Market
+        </span>
+        <span
+          class="table-field-pending-vendor-onboarding"
+        >
+          1st
+        </span>
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Total
+          </h4>
+          $821.85
+        </section>
+        $821.85
+      </span>
+    </section>
+    <section
+      role="row"
+    >
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Status
+          </h4>
+          Paid
+        </section>
+        Paid
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Delivery Day
+          </h4>
+          Jul 31, 2020
+        </section>
+        Jul 31, 2020
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Supplier
+          </h4>
+          D & D Poultry Ltd.
+        </section>
+        D & D Poultry Ltd.
+      </span>
+      <span>
+        <section
+          aria-hidden="true"
+        >
+          <h4>
+            Total
+          </h4>
+          $397.96
+        </section>
+        $397.96
+      </span>
+    </section>
   </section>
 </main>
 `;

@@ -26,8 +26,8 @@ describe('Table', () => {
       </Provider>
     )
 
-    expect(getAllByRole('columnheader').length).toEqual(4)
-    expect(getAllByRole('row').length).toEqual(5)
+    expect(getAllByRole('heading').length).toEqual(4) // number of columns
+    expect(getAllByRole('row').length).toEqual(4)
   })
 
   describe('when no orders are found', () => {

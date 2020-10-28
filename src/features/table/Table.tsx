@@ -26,30 +26,27 @@ const Table = () => {
   }
 
   return (
-    <section>
-      <table data-testid="orders-table">
-        <thead>
-          <tr>
-            {columHeaders.map((columHeader: string) => (
-              <th key={columHeader}>{columHeader}</th>
-            ))}
-          </tr>
-        </thead>
+    <section data-testid="orders-table">
+      <header>
+        {columHeaders.map((columHeader: string) => (
+          <h4 key={columHeader}>{columHeader}</h4>
+        ))}
+      </header>
 
-        <tbody>
-          {orders.map((order: Datum) => (
-            <tr key={order.id}>
-              {columHeaders.map(
-                (columHeader: string, columnHeaderIndex: number) => (
-                  <td key={`${columHeader}${columnHeaderIndex}`}>
-                    <TableField order={order} columHeader={columHeader} />
-                  </td>
-                )
-              )}
-            </tr>
+      {orders.map((order: Datum) => (
+        <section key={order.id} role="row">
+          {columHeaders.map((columHeader: string) => (
+            <span key={`${columHeader}${order.id}`}>
+              <section aria-hidden="true">
+                <h4>{columHeader}</h4>
+                <TableField order={order} columHeader={columHeader} />
+              </section>
+
+              <TableField order={order} columHeader={columHeader} />
+            </span>
           ))}
-        </tbody>
-      </table>
+        </section>
+      ))}
     </section>
   )
 }
