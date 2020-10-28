@@ -23,12 +23,7 @@ export const tableSlice = createSlice({
 
 export const { updateOrders } = tableSlice.actions
 
-export const columHeaders = [
-  'Status',
-  'Delivery Day',
-  'Supplier (or Vendor)',
-  'Total',
-]
+export const columHeaders = ['Status', 'Delivery Day', 'Supplier', 'Total']
 
 // The function below is called a selector and allows us to select a orders from
 // the state. Selectors can also be defined inline where they're used instead of

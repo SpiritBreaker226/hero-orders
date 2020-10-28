@@ -13,7 +13,7 @@ const TableField = ({ order, columHeader }: TableFieldProps) => {
   const field = () => {
     if (columHeader === 'Delivery Day') {
       return moment(order.deliveryDay).format('MMM D, YYYY')
-    } else if (columHeader === 'Supplier (or Vendor)') {
+    } else if (columHeader === 'Supplier') {
       return (
         <>
           {order.vendorName}

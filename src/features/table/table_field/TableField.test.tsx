@@ -36,7 +36,7 @@ describe('TableField', () => {
     })
   })
 
-  describe('for the Supplier (or Vendor) field', () => {
+  describe('for the Supplier field', () => {
     it('should return the vendor name', () => {
       render(
         <TableField
@@ -46,7 +46,7 @@ describe('TableField', () => {
             isBYOS: true,
             isPendingVendorOnboarding: false,
           }}
-          columHeader="Supplier (or Vendor)"
+          columHeader="Supplier"
         />
       )
 
@@ -69,7 +69,7 @@ describe('TableField', () => {
               isBYOS: true,
               isPendingVendorOnboarding: true,
             }}
-            columHeader="Supplier (or Vendor)"
+            columHeader="Supplier"
           />
         )
 
@@ -93,7 +93,7 @@ describe('TableField', () => {
               isBYOS: false,
               isPendingVendorOnboarding: false,
             }}
-            columHeader="Supplier (or Vendor)"
+            columHeader="Supplier"
           />
         )
 
@@ -119,7 +119,7 @@ describe('TableField', () => {
               isBYOS: false,
               isPendingVendorOnboarding: true,
             }}
-            columHeader="Supplier (or Vendor)"
+            columHeader="Supplier"
           />
         )
 

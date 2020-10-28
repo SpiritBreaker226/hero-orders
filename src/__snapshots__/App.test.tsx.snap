@@ -17,7 +17,7 @@ exports[`App when fetching order data renders orders component 1`] = `
             Delivery Day
           </th>
           <th>
-            Supplier (or Vendor)
+            Supplier
           </th>
           <th>
             Total
