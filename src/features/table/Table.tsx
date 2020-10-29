@@ -26,6 +26,23 @@ const Table = () => {
     )
   }
 
+  const MobileOnly = ({
+    order,
+    columHeader,
+  }: {
+    order: Datum
+    columHeader: string
+  }) => (
+    <section className={styles.fieldContainer} aria-hidden="true">
+      <h4 className={styles.columHeader}>{columHeader}</h4>
+      <TableField
+        order={order}
+        columHeader={columHeader}
+        className={styles.fieldItem}
+      />
+    </section>
+  )
+
   return (
     <section data-testid="orders-table" className={styles.table}>
       <header className={styles.columHeaderContainerForDesktop}>
@@ -48,14 +65,7 @@ const Table = () => {
               key={`${columHeader}${order.id}`}
               className={styles.fieldItem}
             >
-              <section className={styles.fieldContainer} aria-hidden="true">
-                <h4 className={styles.columHeader}>{columHeader}</h4>
-                <TableField
-                  order={order}
-                  columHeader={columHeader}
-                  className={styles.fieldItem}
-                />
-              </section>
+              <MobileOnly order={order} columHeader={columHeader} />
 
               <TableField
                 order={order}
