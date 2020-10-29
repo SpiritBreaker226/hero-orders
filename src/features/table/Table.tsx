@@ -12,13 +12,13 @@ import styles from './Table.module.scss'
 
 const Table = () => {
   const fetchState = useSelector(selectFetch)
-  const orders = useSelector(selectOrders)
+  const { filterOrders } = useSelector(selectOrders)
 
   if (fetchState.isLoading || fetchState.errorMessage) {
     return null
   }
 
-  if (orders.length === 0) {
+  if (filterOrders.length === 0) {
     return (
       <section data-testid="no-orders" className={styles.noOrdersFound}>
         <h4>No orders Found</h4>
@@ -36,7 +36,7 @@ const Table = () => {
         ))}
       </header>
 
-      {orders.map((order: Datum) => (
+      {filterOrders.map((order: Datum) => (
         <section
           key={order.id}
           role="row"
@@ -44,6 +44,7 @@ const Table = () => {
         >
           {columHeaders.map((columHeader: string) => (
             <span
+              data-testid={`${columHeader}${order.vendorName}`}
               key={`${columHeader}${order.id}`}
               className={styles.fieldItem}
             >

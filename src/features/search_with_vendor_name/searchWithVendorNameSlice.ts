@@ -1,5 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { RootState } from '../../app/store'
+
+import { AppThunk, RootState } from '../../app/store'
+import { filterOrders } from '../table/tableSlice'
 
 export const defaultOptions = [{ label: 'All Suppliers', value: '' }]
 
@@ -19,7 +21,7 @@ export const searchWithVendorNameSlice = createSlice({
   name: 'searchWithVendorName',
   initialState,
   reducers: {
-    updateSearchWithVendorName: (state, action: PayloadAction<string>) => {
+    updateValue: (state, action: PayloadAction<string>) => {
       state.value = action.payload
     },
     resetVendorNames: (state, action: PayloadAction<string[]>) => {
@@ -39,8 +41,15 @@ export const searchWithVendorNameSlice = createSlice({
   },
 })
 
+export const updateSearchWithVendorName = (searchValue: string): AppThunk => (
+  dispatch
+) => {
+  dispatch(updateValue(searchValue))
+  dispatch(filterOrders(searchValue))
+}
+
 export const {
-  updateSearchWithVendorName,
+  updateValue,
   resetVendorNames,
 } = searchWithVendorNameSlice.actions
 

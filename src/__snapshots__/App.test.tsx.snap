@@ -78,6 +78,7 @@ exports[`App when fetching order data renders orders component 1`] = `
     >
       <span
         class="fieldItem"
+        data-testid="StatusD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -110,6 +111,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="Delivery DayD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -134,6 +136,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="SupplierD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -192,6 +195,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="TotalD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -221,6 +225,7 @@ exports[`App when fetching order data renders orders component 1`] = `
     >
       <span
         class="fieldItem"
+        data-testid="StatusMister Produce"
       >
         <section
           aria-hidden="true"
@@ -253,6 +258,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="Delivery DayMister Produce"
       >
         <section
           aria-hidden="true"
@@ -277,6 +283,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="SupplierMister Produce"
       >
         <section
           aria-hidden="true"
@@ -335,6 +342,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="TotalMister Produce"
       >
         <section
           aria-hidden="true"
@@ -364,6 +372,7 @@ exports[`App when fetching order data renders orders component 1`] = `
     >
       <span
         class="fieldItem"
+        data-testid="StatusD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -396,6 +405,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="Delivery DayD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -420,6 +430,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="SupplierD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -488,6 +499,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="TotalD & D Poultry Ltd."
       >
         <section
           aria-hidden="true"
@@ -517,6 +529,7 @@ exports[`App when fetching order data renders orders component 1`] = `
     >
       <span
         class="fieldItem"
+        data-testid="StatusCanway Distribution"
       >
         <section
           aria-hidden="true"
@@ -549,6 +562,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="Delivery DayCanway Distribution"
       >
         <section
           aria-hidden="true"
@@ -573,6 +587,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="SupplierCanway Distribution"
       >
         <section
           aria-hidden="true"
@@ -619,6 +634,7 @@ exports[`App when fetching order data renders orders component 1`] = `
       </span>
       <span
         class="fieldItem"
+        data-testid="TotalCanway Distribution"
       >
         <section
           aria-hidden="true"

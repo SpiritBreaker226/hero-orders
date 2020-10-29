@@ -23,14 +23,10 @@ const FetchData: FunctionComponent = () => {
         dispatch(updateLoading(true))
 
         const res = await axios.get(state.urlEndpoint)
-        const orders = res.data.data
+        const orders: Datum[] = res.data.data
         const vendorNames = orders.map((order: Datum) => order.vendorName)
 
-        dispatch(
-          updateOrders({
-            orders,
-          })
-        )
+        dispatch(updateOrders(orders))
 
         dispatch(resetVendorNames(vendorNames))
 

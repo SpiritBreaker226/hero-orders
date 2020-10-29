@@ -14,7 +14,7 @@ describe('Table', () => {
     const mockStore = createStore(reducer, {
       table: {
         ...initialState,
-        orders: orders.data,
+        filterOrders: orders.data,
       },
       fetch: {
         isLoading: false,
@@ -33,10 +33,7 @@ describe('Table', () => {
   describe('when no orders are found', () => {
     it('should render no orders message', () => {
       const mockStore = createStore(reducer, {
-        table: {
-          ...initialState,
-          orders: [],
-        },
+        table: { ...initialState },
         fetch: {
           isLoading: false,
         },

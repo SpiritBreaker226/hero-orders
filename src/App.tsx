@@ -12,7 +12,7 @@ import logo from './logo.svg'
 import './App.scss'
 
 function App() {
-  const orders = useSelector(selectOrders)
+  const { orders } = useSelector(selectOrders)
 
   return (
     <ErrorBoundary>

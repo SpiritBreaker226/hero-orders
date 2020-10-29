@@ -3,7 +3,7 @@ import React from 'react'
 import { createStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 
-import { waitFor, screen, render } from '@testing-library/react'
+import { waitFor, screen, render, fireEvent } from '@testing-library/react'
 
 import axios from 'axios'
 
@@ -42,9 +42,27 @@ describe('App', () => {
     })
 
     describe('for searching', () => {
-      describe('on first load', () => {
-        it('should render all venders as options', () => {
-          expect(screen.getAllByRole('option').length).toEqual(4)
+      describe('when selecting a vendor ', () => {
+        it('should render only that vender then reset back', async () => {
+          fireEvent.change(screen.getByTestId('searchWithVendorName'), {
+            target: { value: 'D & D Poultry Ltd.' },
+          })
+
+          expect(
+            screen.getAllByTestId('SupplierD & D Poultry Ltd.').length
+          ).toEqual(2)
+          expect(
+            screen.queryByTestId('SupplierCanway Distribution')
+          ).not.toBeInTheDocument()
+
+          fireEvent.click(screen.getByTestId('searchResetButton'))
+
+          expect(
+            screen.getAllByTestId('SupplierD & D Poultry Ltd.').length
+          ).toEqual(2)
+          expect(
+            screen.getAllByTestId('SupplierCanway Distribution').length
+          ).toEqual(1)
         })
       })
     })
