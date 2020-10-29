@@ -12,12 +12,7 @@ $body-box-shadow-color: #d2d2d2;
 $body-clip-text-color: #191d20;
 
 .table {
-  width: 100%;
-  margin: 0 auto;
-
-  @media all and (min-width: $layout-breakpoint-small) {
-    width: 80%;
-  }
+  @include content;
 }
 
 .forDesktop {
