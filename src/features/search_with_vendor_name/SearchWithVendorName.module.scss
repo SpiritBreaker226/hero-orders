@@ -1,0 +1,90 @@
+@import '../../index';
+
+$search-bg-color: #f5f5f5;
+
+$search-label-text-color: #7f8583;
+
+$search-select-board-color: #d6ddde;
+$search-select-bg-color: #fff;
+
+$search-button-bg-color: #06282b;
+$search-button-text-color: #ffffff;
+
+@mixin field($border-color) {
+  font-weight: bold;
+  font-size: 16px;
+  border: 0.1em solid $border-color;
+  border-radius: 0.4em;
+  padding: 0.5em 0;
+  width: 17.4em;
+}
+
+.searchWithVendorName {
+  background-color: $search-bg-color;
+
+  padding: 2.7em 1.2em 1.4em;
+
+  @media all and (min-width: $layout-breakpoint-small) {
+    padding: 4.7em 0 3.4em;
+  }
+}
+
+.searchWithVendorNameForum {
+  @include content;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  @media all and (min-width: $layout-breakpoint-small) {
+    flex-flow: row nowrap;
+  }
+
+  .fieldItem {
+    flex: 1 2;
+  }
+
+  .fieldLabel {
+    color: $search-label-text-color;
+  }
+
+  .fieldLabelItem {
+    display: block;
+
+    @media all and (min-width: $layout-breakpoint-small) {
+      display: none;
+    }
+  }
+
+  .fieldLabelItemForDesktop {
+    flex: 1 2;
+    display: none;
+
+    @media all and (min-width: $layout-breakpoint-small) {
+      display: block;
+    }
+  }
+
+  .button {
+    @include field($search-button-bg-color);
+
+    color: $search-button-text-color;
+    background-color: $search-button-bg-color;
+
+    @media all and (min-width: $layout-breakpoint-small) {
+      width: 10.23em;
+      margin-top: 2.57em;
+    }
+  }
+
+  .select {
+    @include field($search-select-board-color);
+
+    background-color: $search-select-bg-color;
+    margin: 1em 0;
+
+    @media all and (min-width: $layout-breakpoint-small) {
+      width: 90%;
+      margin: 1.44em 0 0;
+    }
+  }
+}

@@ -4,45 +4,74 @@ exports[`App when fetching order data renders orders component 1`] = `
 <main
   role="main"
 >
-  <section>
-    <p>
-      <label
-        for="searchWithVendorName"
-      >
-        Suppliers
-      </label>
-    </p>
-    <select
-      data-testid="searchWithVendorName"
-      id="searchWithVendorName"
-      name="searchWithVendorName"
+  <section
+    class="searchWithVendorName"
+  >
+    <div
+      class="searchWithVendorNameForum"
     >
-      <option
-        value=""
+      <div
+        class="fieldLabelItem"
       >
-        All Suppliers
-      </option>
-      <option
-        value="Canway Distribution"
+        <label
+          class="fieldLabel"
+          for="searchWithVendorName"
+        >
+          Suppliers
+        </label>
+      </div>
+      <div
+        class="fieldItem"
       >
-        Canway Distribution
-      </option>
-      <option
-        value="D & D Poultry Ltd."
+        <div
+          class="fieldLabelItemForDesktop"
+        >
+          <label
+            class="fieldLabel"
+            for="searchWithVendorName"
+          >
+            Suppliers
+          </label>
+        </div>
+        <select
+          class="select"
+          data-testid="searchWithVendorName"
+          id="searchWithVendorName"
+          name="searchWithVendorName"
+        >
+          <option
+            value=""
+          >
+            All Suppliers
+          </option>
+          <option
+            value="Canway Distribution"
+          >
+            Canway Distribution
+          </option>
+          <option
+            value="D & D Poultry Ltd."
+          >
+            D & D Poultry Ltd.
+          </option>
+          <option
+            value="Mister Produce"
+          >
+            Mister Produce
+          </option>
+        </select>
+      </div>
+      <div
+        class="fieldItem"
       >
-        D & D Poultry Ltd.
-      </option>
-      <option
-        value="Mister Produce"
-      >
-        Mister Produce
-      </option>
-    </select>
-    <button
-      data-testid="searchResetButton"
-    >
-      X Reset Filter
-    </button>
+        <button
+          class="button"
+          data-testid="searchResetButton"
+        >
+          X Reset Filter
+        </button>
+      </div>
+    </div>
   </section>
   <section
     class="table"
