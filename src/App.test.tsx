@@ -40,6 +40,14 @@ describe('App', () => {
       expect(screen.getByRole('img')).toBeVisible()
       expect(screen.getByRole('main')).toMatchSnapshot()
     })
+
+    describe('for searching', () => {
+      describe('on first load', () => {
+        it('should render all venders as options', () => {
+          expect(screen.getAllByRole('option').length).toEqual(4)
+        })
+      })
+    })
   })
 
   describe('when loading the page', () => {
@@ -67,6 +75,8 @@ describe('App', () => {
       expect(
         screen.queryByText('Loading', { exact: false })
       ).not.toBeInTheDocument()
+
+      expect(screen.queryByTestId('searchBox')).not.toBeInTheDocument()
 
       expect(
         screen.queryByText('No Orders Found', { exact: false })

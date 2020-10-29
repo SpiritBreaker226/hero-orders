@@ -4,6 +4,46 @@ exports[`App when fetching order data renders orders component 1`] = `
 <main
   role="main"
 >
+  <section>
+    <p>
+      <label
+        for="searchWithVendorName"
+      >
+        Suppliers
+      </label>
+    </p>
+    <select
+      data-testid="searchWithVendorName"
+      id="searchWithVendorName"
+      name="searchWithVendorName"
+    >
+      <option
+        value=""
+      >
+        All Suppliers
+      </option>
+      <option
+        value="Canway Distribution"
+      >
+        Canway Distribution
+      </option>
+      <option
+        value="D & D Poultry Ltd."
+      >
+        D & D Poultry Ltd.
+      </option>
+      <option
+        value="Mister Produce"
+      >
+        Mister Produce
+      </option>
+    </select>
+    <button
+      data-testid="searchResetButton"
+    >
+      X Reset Filter
+    </button>
+  </section>
   <section
     class="table"
     data-testid="orders-table"

@@ -3,12 +3,15 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import axios from 'axios'
 
+import { Datum } from '../../types/Order'
+
 import {
   updateLoading,
   updateErrorMessageFromServer,
   selectFetch,
 } from './fetchDataSlice'
 import { updateOrders } from '../table/tableSlice'
+import { resetVendorNames } from '../search_with_vendor_name/searchWithVendorNameSlice'
 
 const FetchData: FunctionComponent = () => {
   const dispatch = useDispatch()
@@ -20,12 +23,16 @@ const FetchData: FunctionComponent = () => {
         dispatch(updateLoading(true))
 
         const res = await axios.get(state.urlEndpoint)
+        const orders = res.data.data
+        const vendorNames = orders.map((order: Datum) => order.vendorName)
 
         dispatch(
           updateOrders({
-            orders: res.data.data,
+            orders,
           })
         )
+
+        dispatch(resetVendorNames(vendorNames))
 
         dispatch(updateLoading(false))
       } catch (error) {
