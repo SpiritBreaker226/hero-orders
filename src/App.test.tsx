@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { createStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 
 import { waitFor, screen, render, fireEvent } from '@testing-library/react'
