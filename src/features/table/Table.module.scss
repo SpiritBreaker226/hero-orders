@@ -94,6 +94,5 @@ $body-clip-text-color: #191d20;
 }
 
 .fieldItemForDesktop {
-  @extend .fieldItem;
   @extend .forDesktop;
 }
