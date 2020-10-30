@@ -13,8 +13,8 @@ const Table = () => {
 
   if (filterOrders.length === 0) {
     return (
-      <section data-testid="no-orders" className={styles.noOrdersFound}>
-        <h4>No orders Found</h4>
+      <section data-testid="no-orders" className={styles.message}>
+        <h4>No Orders Found</h4>
       </section>
     )
   }
