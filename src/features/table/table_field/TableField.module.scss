@@ -8,7 +8,7 @@ $body-1st-bg-color: #fdeb76;
 
 @mixin roundTags($background-color) {
   font-weight: bold;
-  padding: 0.8em 1.32em;
+  padding: 0.6em 1em;
   border: 0.1em solid $background-color;
   border-radius: 1em;
   color: $body-clip-text-color;
