@@ -2,24 +2,33 @@ import React from 'react'
 import { render } from '@testing-library/react'
 
 import { Provider } from 'react-redux'
-import { createStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit'
 
 import orders from '../helpers/test_data_orders.json'
 
+import fetchDataReducer from '../fetch_data/fetchDataSlice'
+
 import Table from './Table'
-import reducer, { initialState } from './tableSlice'
+import tableReducer, { initialState } from './tableSlice'
 
 describe('Table', () => {
   it('should render as expeected', () => {
-    const mockStore = createStore(reducer, {
-      table: {
-        ...initialState,
-        filterOrders: orders.data,
+    const mockStore = configureStore({
+      reducer: {
+        table: tableReducer,
+        fetch: fetchDataReducer,
       },
-      fetch: {
-        isLoading: false,
+      preloadedState: {
+        table: {
+          ...initialState,
+          filterOrders: orders.data,
+        },
+        fetch: {
+          isLoading: false,
+        },
       },
     })
+
     const { getAllByRole } = render(
       <Provider store={mockStore}>
         <Table />
@@ -32,12 +41,19 @@ describe('Table', () => {
 
   describe('when no orders are found', () => {
     it('should render no orders message', () => {
-      const mockStore = createStore(reducer, {
-        table: { ...initialState },
-        fetch: {
-          isLoading: false,
+      const mockStore = configureStore({
+        reducer: {
+          table: tableReducer,
+          fetch: fetchDataReducer,
+        },
+        preloadedState: {
+          table: { ...initialState },
+          fetch: {
+            isLoading: false,
+          },
         },
       })
+
       const { getByText } = render(
         <Provider store={mockStore}>
           <Table />
