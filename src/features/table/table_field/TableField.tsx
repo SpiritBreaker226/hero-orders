@@ -33,7 +33,7 @@ const TableField = ({
         </div>
       )
     } else if (columHeader === 'Total') {
-      return !order.total ? '' : `$${order.total.toLocaleString()}`
+      return order.total ? `$${order.total.toLocaleString()}` : ''
     }
 
     return (
