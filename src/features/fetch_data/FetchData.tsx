@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { fetchOrders, selectFetch } from './fetchDataSlice'
 
+import styles from './FetchData.module.scss'
+
 const FetchData: FunctionComponent = () => {
   const dispatch = useDispatch()
   const state = useSelector(selectFetch)
@@ -11,9 +13,9 @@ const FetchData: FunctionComponent = () => {
     dispatch(fetchOrders(state.urlEndpoint))
   }, [dispatch, state.urlEndpoint])
 
-  if (state.isLoading) return <div className="message">Loading...</div>
+  if (state.isLoading) return <div className={styles.message}>Loading...</div>
   if (state.errorMessage) {
-    return <div className="message">{state.errorMessage}</div>
+    return <div className={styles.message}>{state.errorMessage}</div>
   }
 
   return null
