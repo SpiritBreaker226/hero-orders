@@ -3,20 +3,13 @@ import { useSelector } from 'react-redux'
 
 import { Datum } from '../../types/Order'
 
-import { selectFetch } from '../fetch_data/fetchDataSlice'
-
 import TableField from './table_field/TableField'
 
 import { columHeaders, selectOrders } from './tableSlice'
 import styles from './Table.module.scss'
 
 const Table = () => {
-  const fetchState = useSelector(selectFetch)
   const { filterOrders } = useSelector(selectOrders)
-
-  if (fetchState.isLoading || fetchState.errorMessage) {
-    return null
-  }
 
   if (filterOrders.length === 0) {
     return (

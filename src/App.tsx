@@ -7,12 +7,16 @@ import SearchWithVendorName from './features/search_with_vendor_name/SearchWithV
 import Table from './features/table/Table'
 
 import { selectOrders } from './features/table/tableSlice'
+import { selectFetch } from './features/fetch_data/fetchDataSlice'
 
 import logo from './logo.svg'
 import './App.scss'
 
 function App() {
+  const fetchState = useSelector(selectFetch)
   const { orders } = useSelector(selectOrders)
+  const isLoadingOrHasErrorFromServer =
+    fetchState.isLoading || fetchState.errorMessage
 
   return (
     <ErrorBoundary>
@@ -21,8 +25,10 @@ function App() {
       </header>
 
       <main role="main">
-        {orders.length > 0 && <SearchWithVendorName />}
-        <Table />
+        {!isLoadingOrHasErrorFromServer && orders.length > 0 && (
+          <SearchWithVendorName />
+        )}
+        {!isLoadingOrHasErrorFromServer && <Table />}
         <FetchData />
       </main>
     </ErrorBoundary>

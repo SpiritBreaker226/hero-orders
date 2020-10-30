@@ -50,6 +50,7 @@ describe('App', () => {
           expect(
             screen.getAllByTestId('SupplierD & D Poultry Ltd.').length
           ).toEqual(2)
+
           expect(
             screen.queryByTestId('SupplierCanway Distribution')
           ).not.toBeInTheDocument()
@@ -59,6 +60,7 @@ describe('App', () => {
           expect(
             screen.getAllByTestId('SupplierD & D Poultry Ltd.').length
           ).toEqual(2)
+
           expect(
             screen.getAllByTestId('SupplierCanway Distribution').length
           ).toEqual(1)
@@ -86,6 +88,8 @@ describe('App', () => {
       expect(
         screen.queryByText('No Orders Found', { exact: false })
       ).not.toBeInTheDocument()
+
+      expect(screen.queryByTestId('searchBox')).not.toBeInTheDocument()
 
       await waitFor(() => screen.getByTestId('no-orders'))
 
@@ -115,6 +119,8 @@ describe('App', () => {
         expect(
           screen.queryByText('No Orders Found', { exact: false })
         ).not.toBeInTheDocument()
+
+        expect(screen.queryByTestId('searchBox')).not.toBeInTheDocument()
 
         expect(
           screen.getByText('fake error message', { exact: false })
